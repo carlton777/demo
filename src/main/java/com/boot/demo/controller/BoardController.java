@@ -46,7 +46,7 @@ public class BoardController {
     public String form(@Valid Board board, BindingResult bindingResult){
         log.info("@# form()");
 
-//        boardValidator.validate(board, bindingResult);
+        boardValidator.validate(board, bindingResult);
 
         if (bindingResult.hasErrors()) {
             log.info("@# hasErrors()");
